@@ -53,4 +53,4 @@ plt.imshow(image)
 plt.axis("off")
 plt.savefig("output_results/Docling/debug_Docling.png", bbox_inches="tight", dpi=300)
 
-print("Saved image as debug_overlay.png")
+print("Saved image with bounding boxes as debug_Docling.png")
