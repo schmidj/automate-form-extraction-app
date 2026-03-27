@@ -51,11 +51,6 @@ for t in data.get("texts", []):
 # Save result
 plt.imshow(image)
 plt.axis("off")
-plt.savefig("debug_overlay.png", bbox_inches="tight", dpi=300)
-
-print("Saved debug_overlay.png")
-
-# Save image with bounding boxes
 plt.savefig("output_results/Docling/debug_Docling.png", bbox_inches="tight", dpi=300)
 
 print("Saved image as debug_overlay.png")
