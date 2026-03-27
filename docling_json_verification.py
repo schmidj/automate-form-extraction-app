@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw
 import matplotlib.pyplot as plt
 from pdf2image import convert_from_path
 
-pages = convert_from_path("data/sea-sampling-CN-0003.pdf", first_page=1, last_page=1)
+pages = convert_from_path("data/41266201.pdf", first_page=1, last_page=1)
 pages[0].save("output_results/page1.png")
 
 # Load JSON

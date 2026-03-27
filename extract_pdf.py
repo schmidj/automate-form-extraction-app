@@ -2,7 +2,7 @@ from docling.document_converter import DocumentConverter
 import json
 
 # Path to your PDF
-input_file = "data/sea-sampling-CN-0003.pdf"
+input_file = "data/41266201.pdf"
 
 # Initialize converter
 converter = DocumentConverter()
