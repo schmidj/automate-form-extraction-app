@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw
 import matplotlib.pyplot as plt
 from pdf2image import convert_from_path
 
-pages = convert_from_path("data/41266201.pdf", first_page=1, last_page=1)
+pages = convert_from_path("data/sea-sampling-CN-0003.pdf", first_page=1, last_page=1)
 pages[0].save("output_results/page1.png")
 
 # Load JSON
@@ -20,10 +20,8 @@ print(page)
 
 pdf_width = page["size"]["width"]
 pdf_height = page["size"]["height"]
-print(f"PDF dimensions: {pdf_width} x {pdf_height}")
 
 img_width, img_height = image.size
-print(f"Image dimensions: {img_width} x {img_height}")
 
 scale_x = img_width / pdf_width
 scale_y = img_height / pdf_height
